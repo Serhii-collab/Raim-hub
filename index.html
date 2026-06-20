@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Raim Hub</title>
+<title>RAIM HUB</title>
+
 <style>
 *{
 margin:0;
@@ -11,57 +12,131 @@ padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
 }
+
 body{
-height:100vh;
+background:#000;
+color:white;
+min-height:100vh;
 display:flex;
 justify-content:center;
-align-items:center;
-background:linear-gradient(135deg,#111,#1d1d1d,#292929);
-color:white;
-overflow:hidden;
+padding:30px;
 }
+
 .container{
-text-align:center;
-padding:40px;
-background:rgba(255,255,255,0.05);
-border-radius:25px;
-box-shadow:0 0 30px rgba(255,255,255,0.1);
+width:100%;
+max-width:900px;
 }
+
+.banner{
+width:100%;
+border-radius:20px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,0.15);
+margin-bottom:25px;
+}
+
+.banner img{
+width:100%;
+display:block;
+}
+
+.profile{
+text-align:center;
+}
+
+.avatar{
+width:140px;
+height:140px;
+border-radius:50%;
+background:#111;
+border:2px solid rgba(255,255,255,0.2);
+margin:auto;
+margin-bottom:20px;
+}
+
 h1{
-font-size:60px;
+font-size:52px;
+letter-spacing:4px;
 margin-bottom:10px;
 }
-p{
-margin-bottom:25px;
-color:#ccc;
+
+.subtitle{
+color:#bdbdbd;
+margin-bottom:35px;
+font-size:18px;
 }
+
+.links{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:500px;
+margin:auto;
+}
+
 .link{
 display:block;
-width:250px;
-margin:10px auto;
-padding:15px;
+padding:18px;
+border-radius:15px;
 text-decoration:none;
 color:white;
-border:1px solid rgba(255,255,255,0.2);
-border-radius:15px;
-transition:0.3s;
+background:#111;
+border:1px solid rgba(255,255,255,0.15);
+transition:0.25s;
+font-size:18px;
 }
+
 .link:hover{
-transform:scale(1.05);
-background:rgba(255,255,255,0.1);
+background:#1b1b1b;
+transform:translateY(-2px);
+}
+
+.footer{
+text-align:center;
+margin-top:35px;
+color:#666;
+font-size:14px;
 }
 </style>
 </head>
-<body>
-<div class="container">
-<h1>RAIM HUB</h1>
-<p>Все мои ссылки в одном месте</p>
 
-TikTok
-Twitch
-YouTube
-Discord
+<body>
+
+<div class="container">
+
+<div class="banner">
+<img src="Screenshot 2026-06-20 162121.png">
+</div>
+
+<div class="profile">
+
+<div class="avatar"></div>
+
+<h1>RAIM</h1>
+
+<div class="subtitle">
+Chasing Goals Today. Achieving More Tomorrow.
+</div>
+
+<div class="links">
+
+<a class="link" href="#">Twitch</a>
+
+<a class="link" href="#">YouTube</a>
+
+<a class="link" href="#">TikTok</a>
+
+<a class="link" href="#">Discord</a>
 
 </div>
+
+<div class="footer">
+RAIM HUB
+</div>
+
+</div>
+
+</div>
+
 </body>
 </html>
